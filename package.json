@@ -1,0 +1,28 @@
+{
+  "name": "teaching-tools",
+  "version": "1.0.0",
+  "description": "A set of tools used in teaching examples from previous work",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinlizardi/Teaching-Tools.git"
+  },
+  "author": "Devin Lizardi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinlizardi/Teaching-Tools/issues"
+  },
+  "homepage": "https://github.com/devinlizardi/Teaching-Tools#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
