@@ -1,5 +1,6 @@
 const express = require("express")
 const app = express()
+const path = require('path');
 
 let notes = [
   {
@@ -22,8 +23,10 @@ let notes = [
   },
 ]
 
+app.use(express.static("public"));
+
 app.get("/", (req, res) => {
-  res.send("<h1>Hello World!</h1>")
+  res.sendFile(path.join(__dirname, '../public/index.html'))
 })
 
 app.get("/api/notes", (req, res) => {
